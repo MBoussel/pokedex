@@ -1,8 +1,8 @@
-type PokemonProps = {
+type PokemonType = {
   name: string;
   imgSrc?: string;
 };
-function PokemonCard({ pokemon }: { pokemon: PokemonProps }) {
+function PokemonCard({ pokemon }: { pokemon: PokemonType }) {
   return (
     <figure>
       <figcaption>{pokemon.name}</figcaption>
