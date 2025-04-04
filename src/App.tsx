@@ -2,10 +2,10 @@ import { useState } from "react";
 import "./App.css";
 
 import PokemonCard from "./components/PokemonCard";
+import NavBar from "./components/NavBar";
 const pokemonList = [
   {
     name: "bulbasaur",
-
     imgSrc:
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
   },
@@ -26,6 +26,8 @@ const pokemonList = [
   },
   {
     name: "mew",
+    imgSrc:
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/151.png",
   },
 ];
 /* button */
@@ -38,17 +40,7 @@ function App() {
 
   return (
     <div>
-      <nav>
-        {pokemonList.map((pokemon) => (
-          <button
-            type="button"
-            key={pokemon.name}
-            onClick={() => setPokemonName(pokemon.name)}
-          >
-            {pokemon.name}
-          </button>
-        ))}
-      </nav>
+      <NavBar setPokemonName={setPokemonName} pokemonList={pokemonList} />
       <PokemonCard pokemon={pokemon} />
     </div>
   );
