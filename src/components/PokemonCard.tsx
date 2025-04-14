@@ -4,7 +4,7 @@ type PokemonType = {
 };
 function PokemonCard({ pokemon }: { pokemon: PokemonType }) {
   return (
-    <figure className="card">
+    <figure className={`card ${pokemon.name}`}>
       {pokemon.imgSrc ? (
         <img src={pokemon.imgSrc} alt="pokemon" className="cardImg" />
       ) : (

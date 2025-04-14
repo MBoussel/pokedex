@@ -24,7 +24,28 @@
   border-radius: inherit;
   box-shadow: inherit;
 }
+.Bulbasaur {
+  background-color: lightgreen;
+}
+.Mew {
+  background-color: pink;
+}
+.Pikachu {
+  background-color: #f4d77b;
+}
+.Geodude {
+  background-color: #bab7aa;
+}
+.Snorlax {
+  background-color: #6098ac;
+}
 
+.Squirtle {
+  background-color: lightblue;
+}
+.Charmander {
+  background-color: lightsalmon;
+}
 .pokeName {
   font-size: 3rem;
   font-weight: bolder;
